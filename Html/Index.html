@@ -3,111 +3,32 @@
 <head>
 	<meta charset="UTF-8">
 <title>SEmantic UI</title>
-<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1"> == $0
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="D:/workspace/SemanticUIWebsite/CSS/index.css">
+
 <link rel="stylesheet" type="text/css" href="D:/workspace/semantic/dist/semantic.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
-
 <style>
-#cards
-{
-	
-	padding-bottom:0px;
-	margin-top: -5px;
-}
-#footer
-{
-	height: 50px;
-	text-align: center;
-	background:#229182;
-	font-size: 30px;
-}
-footer ul li{
-	display: inline;
-}
-
-#prompt{
-	margin-top: 6px;
-}
+/*khanna wanna*/
 h1
 {
 	font-size: 24px;
 	color: teal;
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 22px;
+	margin-right: 22.5px;
 	padding-top: 5px;
 }
-#image{
-       margin-top: 65px;
-       width: 100%;
-       height: 600px;
-
-}
-#fluidimage{
-	margin-top: 10px;
-	background: #ff0239;
-	width: 101.5%;
-}
-.column{
-	height:370px;
-	}
-
-#column1
-{
-   background:#f5efef;
-   font-size: 30px;
-   border-radius: 5px;
-
-
-}
-#column2
-{
-   background:#10d1c7;
-   
-}
-#column3
-{
-   background:#10d1c7;
-   
-}
-#column01
-{
-	background:#21ede2;
-}
-.row1
-{
-	background:white;
-	border-radius: 5px;
-	margin-right: 12px;
-	margin-top: 10px;
-	height: 50px;
-}
-.row2
-{
-	background: white;
-	border-radius: 5px;
-	margin-right: 12px;
-	margin-top: 35px;
-	height: 50px;
-}
-.row3
-{
-	background: white;
-	border-radius: 5px;
-	margin-right: 12px;
-	margin-top: 35px;
-	height: 50px;
-}
+/*heading for menu in mobile size*/
 h2
 {
-	margin-bottom: 3px;
-	font-size: 38px;
+  
 	color: teal;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top: 80px;
-	font-family: sans-serif;
+	margin-left: 20px;
+
+
 }
+/*Recipe*/
 h3
 {
 	margin-bottom: 3px;
@@ -118,27 +39,13 @@ h3
 	padding-top: 5px;
 	font-family: sans-serif;
 }
-#columns
-{
-	height: 275px;
-}
-.imagecard{
-	line-height: 100px;
-	width:30px;
-	margin-left: 7px;
-	padding-bottom: 10px;
-}
-#para1
-{
-	margin-top: 52px;
-}
-
 </style>
 </head>
 <body>
-	
-	<div class="ui stackable labeled  icon menu">
+	<!-- here goes the header part -->
+	<div class="ui stackable labeled  icon menu" id="web">
 		<h1>KHANA WANNA<br>WANNA KHANA</h1>
+		<!-- menu of the header bar -->
 		
 		<div class=" active teal item">
 			<i class="home icon">
@@ -183,10 +90,10 @@ h3
 				
 			</i>Orders
 		</div>
-
+       <!-- search menu bar -->
 		<div class="ui right floated massive search" id="prompt">
 			<div class="ui icon input">
-		<input class="prompt" type="text" placeholder="search ">
+		<input class="prompt" type="text"  placeholder="search ">
 		<i class="search icon">
 				
 			</i>
@@ -197,18 +104,72 @@ h3
 			<i class="signup icon">
 				
 			</i>SignUp
-		</div>
+		</div></div>
+		<!-- this is for off screen menu -->
+			<div class="ui labeled icon menu" id="mob">
+				<div class="item" id="menu">
+						
+					<i class="sidebar icon"></i>
+					Menu
+				</div>
+				<h2>KHANNA WANNA</h2>
+				<div class="ui sidebar vertical left menu" id="mobbar">
+					<div class="item">
+						<div class="active teal item">
+						<i class="home icon"></i>
+						Home
+						</div>
+						<div class="active teal item">
+						<i class="info icon"></i>
+						About
+						</div>
+						<div class="active teal item">
+						<i class="call icon"></i>
+						Contact
+						</div>
+						<div class="active teal item">
+						<i class="food icon"></i>
+						Resources
+						</div>
+						<div class="active teal item">
+						<i class="settings icon"></i>
+						Features
+						</div>
+						<div class="active teal item">
+						<i class="truck icon"></i>
+						Services
+						</div>
+						<div class="active teal item">
+						<i class="sign in icon"></i>
+						SignIn
+						</div>
+						<div class="active teal item">
+						<i class="food icon"></i>
+						Orders
+						</div>
+						<div class="active teal item">
+						<i class="signup icon"></i>
+						SignUp
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- this is for off screenmenu -->
+	
+
 
 	
-				
-	</div>
+	<!-- jumbotron image -->
+	<div class="jumbo">
 		<img src="D:\workspace\SemanticUIWebsite\images/food1.jpg" id="image">
+	    </div>
+	    <!-- first grid with three columns -->
 		<div class="ui stackable equal width grid " id="columns" >
 			<div class="column" id="column1">
-				<strong><h2>Awesome food for <br>Awesome people</h2></strong>
+				<strong><div id="extra">Awesome food for <br><br>Awesome people</div></strong>
 			</div>
 			<div class="column" id="column2">
-											<div class="ui stackable centered card" id="cards">
+						<div class="ui stackable centered card">
 						  <div class="image" id="image1" >
 						    <img src="D:\workspace\SemanticUIWebsite\images/chef.jpeg">
 						  </div>
@@ -217,6 +178,7 @@ h3
 						  </div>
 						</div>
 			</div>
+			<!-- first grid third column three rows -->
 			<div class="column" id="column3">
 				
 				<div class="row1">
@@ -232,41 +194,31 @@ h3
 				</div>
 			</div>
 		</div>
+		
+		<!--  second grid first column-->
 		<div class="ui stackable equal width grid " id="cards" >
-			<div class="column" id="column01">
-<div class="ui stackable cards">
-  <div class="content">
-    <div class="right floated meta">14h</div>
-    <img class="ui stackable avatar image" src="D:\workspace\SemanticUIWebsite\images/chef.jpeg"> Elliot
-  </div>
-  <div class="image">
-    <img src="D:\workspace\SemanticUIWebsite\images/chef.jpeg">
-  </div>
-  <div class="content">
-    <span class="right floated">
-      <i class="heart outline like icon"></i>
-      17 likes
-    </span>
-    <i class="comment icon"></i>
-    3 comments
-  </div>
-  <div class="extra content">
-    <div class="ui stackable large transparent left icon input">
-      <i class="heart outline icon"></i>
-      <input type="text" placeholder="Add Comment...">
-    </div>
-  </div>
+			<div class="column" id="column02">
+<div class="ui stackable cards" id="column002">
+  <div class="ui stackable centered card">
+						  <div class="image" id="image1" >
+						    <img src="D:\workspace\SemanticUIWebsite\images/chef.jpeg">
+						  </div>
+						  <div class="content"> 
+						    <a class="header">Chilliflakes&Oragano</a>
+						  </div>
+						</div></div>
 </div>
-			</div>
+    <!-- second grid second column -->
 			<div class="column" id="column01">
 						<h3>Recipe</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores eius, obcaecati ullam porro dolorum quisquam maiores tenetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae reprehenderit ad, rem repudiandae dolore blanditiis impedit earum quae minus, nobis iusto. Perspiciatis dolores, aliquid, magni dolorem iusto quidem corporis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore aspernatur amet, veniam labore, accusamus ipsum natus debitis. Dolor veritatis dolorum, tempora ullam, tempore deserunt cum nostrum at animi magni repellendus.</p>
 			</div>
+			<!-- second grid third column -->
 			<div class="column" id="column01">
 				<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora a quibusdam rerum voluptatibus voluptates ratione consectetur temporibus dolorum odio laborum porro, non, esse eveniet eum quos labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde provident obcaecati, voluptatum reiciendis ullam vel veniam recusandae sapiente quae perferendis adipisci expedita. Cupiditate delectus quia unde temporibus autem debitis maxime!</p>
 			</div>
 		</div>
-
+      <!-- third grid with three columns -->
 		<div class="container" id="fluidimage">
 													<div class="ui stackable three column grid">
 								  <div class="column">
@@ -301,11 +253,9 @@ h3
 								  </div>
 								</div>
 		</div>
+		<!-- here goes the footer -->
 	
 <footer class="ui grid">
-	<!-- <i class="facebook icon">
-				
-			</i> -->
 			<div class="column" id="footer">
 			<i class="facebook icon"></i> 
 			<i class="twitter icon"></i> 
@@ -315,6 +265,10 @@ h3
 			</div>
 		
 </footer>
+<!-- jquery for toggling the scree -->
+<script>
+	$('#menu').click(function(){ $('#mobbar').sidebar('toggle'); });
+</script>
 </body>
 
 </html>

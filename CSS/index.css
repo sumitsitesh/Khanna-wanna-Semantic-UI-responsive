@@ -1,56 +1,50 @@
 
 <style>
+/*first column second grid*/
 #cards
 {
 	
 	padding-bottom:0px;
 	margin-top: -5px;
 }
+/*footer styling*/
 #footer
 {
 	height: 50px;
 	text-align: center;
-	background:#4286f4;
+	background:#229182;
 	font-size: 30px;
-	margin-top: 8px;
 }
 footer ul li{
 	display: inline;
 }
-
+/*search bar styling*/
 #prompt{
 	margin-top: 6px;
 }
-h1
-{
-	font-size: 24px;
-	color: teal;
-	margin-left: 20px;
-	margin-right: 20px;
-	padding-top: 5px;
-}
+/*jumbotron styling*/
 #image{
-       margin-top: 65px;
-       width: 101.5%;
-       height: 600px;
+      
+       width: 100%;
+       height: 620px;
 
 }
+ /*for the three cards in the last grid*/
 #fluidimage{
 	margin-top: 10px;
-	margin-left: 10px;
-	background:#ed3d3d;
+	background: #ff0239;
+	width: 101.5%;
 }
+/*first grid with three columns*/
 .column{
-	height:370px;
-	}
+	/*height:370px;*/
+}
 
 #column1
 {
    background:#f5efef;
    font-size: 30px;
    border-radius: 5px;
-
-
 }
 #column2
 {
@@ -62,10 +56,21 @@ h1
    background:#10d1c7;
    
 }
+/*second and third column of second grid*/
 #column01
 {
 	background:#21ede2;
 }
+/*first column second grid*/
+#column02{
+      background:#21ede2;
+
+}
+#column002{
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+/*third column first grid*/
 .row1
 {
 	background:white;
@@ -90,29 +95,20 @@ h1
 	margin-top: 35px;
 	height: 50px;
 }
+/*heading for mobile size menu*/
 h2
 {
-	margin-bottom: 3px;
-	font-size: 38px;
+  
 	color: teal;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top: 80px;
-	font-family: sans-serif;
+	margin-left: 20px;
 }
-h3
+#menu
 {
-	margin-bottom: 3px;
-	font-size: 38px;
-	color: teal;
-	margin-left: 50px;
-	margin-right: 50px;
-	padding-top: 5px;
-	font-family: sans-serif;
+	float: right;
 }
 #columns
 {
-	height: 270px;
+	height: 275px;
 }
 .imagecard{
 	line-height: 100px;
@@ -120,14 +116,47 @@ h3
 	margin-left: 7px;
 	padding-bottom: 10px;
 }
+#extra {
+	font-size: 35px;
+	color: teal;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+
+
+}
+/*for second para of third column*/
 #para1
 {
 	margin-top: 52px;
 }
-#fluidimage{
-	width: 101.5%;
-	margin-right: 5px;
-	margin-left: 0px;
+/*jumbotron image*/
+.jumbo
+{
+margin-top: -14px;
+margin-right: -8px;
+}
+/*when it is desktop size*/
+	#web{
+		display: flex;
+	}
+	#mob {
+		display: none;
+	}
+@media only screen and (max-width:770px){
+	#column1{
+		margin-top: 10000px;
+	}
+	#cards {
+		margin-top: 420px;
+	}
+	/*when it is in mobile size*/
+	#web{
+		display: none;
+	}
+	#mob {
+		display: flex;
+	}
 }
 
 </style>
